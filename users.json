@@ -1,0 +1,18 @@
+{
+    "users" : [ {
+        "emailid": "prajosh346@gmail.com",
+        "password" : "123456",
+        "name" : "Pranav Joshi"
+      }, 
+      {
+        "emailid": "Prash92jo@gmail.com",
+        "password" : "123456",
+        "name" : "Prashant Joshi"
+      },
+      {
+        "emailid": "priya7798@gmail.com",
+        "password" : "123456",
+        "name" : "Priya Joshi"
+      }
+    ]
+}

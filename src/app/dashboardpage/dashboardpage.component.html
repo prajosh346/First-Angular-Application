@@ -1,0 +1,62 @@
+<p>Welcome {{name}}</p>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm">
+      <div id="barChart" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+      <h5 class="card-title text-center">Column Chart</h5>
+    </div>
+    <!-- <div class="col-sm">
+        <div id="pieChart" style="width:100%; height:400px;"></div>
+        <h5 class="card-title text-center">Pie Chart - Browser market</h5>
+      </div>
+      <div class="col-sm" >
+        <div id="container" style="width:100%; height:400px;"></div>
+        <h5 class="card-title text-center">Pie Chart - Browser market</h5>
+      </div> -->
+  </div>
+  <div *ngIf="projectObject">
+    <div fxLayout="row" class="column">
+      <div fxLayout="row" class="col-sm">
+        <mat-card class="dark-theme">
+          <mat-card-header style="background-color:red;padding:5px">
+            <mat-card-title style="color:whitesmoke;padding:5px">Total Projects</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <h3>{{projectObject.totalProjects}}</h3>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="dark-theme">
+          <mat-card-header style="background-color:red;padding:5px">
+            <mat-card-title style="color:whitesmoke;padding:5px">Pending For Registrations</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <h3> {{projectObject.pendingForRegistrations}}</h3>
+           
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="dark-theme">
+          <mat-card-header style="background-color:red;padding:5px">
+            <mat-card-title style="color:whitesmoke;padding:5px">Registered Projects</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content>
+            <h3>  {{projectObject.registeredsProjects}}</h3>
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="dark-theme">
+          <mat-card-header style="background-color:red;padding:5px">
+            <mat-card-title style="color:whitesmoke;padding:5px">Completed Projects</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content>
+            <h3>  {{projectObject.completed}}</h3>
+          </mat-card-content>
+       
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+</div>
